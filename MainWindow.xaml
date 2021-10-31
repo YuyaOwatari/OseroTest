@@ -1,0 +1,59 @@
+﻿<Window x:Class="OseroTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OseroTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+ <Window.Resources>
+        <Storyboard x:Key="rotateAnimation" FillBehavior="HoldEnd" >
+            <!-- <DoubleAnimation
+                Storyboard.TargetName="rotate"
+                Storyboard.TargetProperty="Angle"
+                From="0" To="360" Duration="0:0:02" /> -->
+            <DoubleAnimation
+                Storyboard.TargetProperty="Width"
+                From="0" To="140" Duration="0:0:02" />
+        </Storyboard>
+</Window.Resources>
+<StackPanel  x:Name="StackOut" Height="600" Width="600" HorizontalAlignment="Center">
+        <Grid x:Name="GridMessage" Height="50" Width="500" >
+                <Label x:Name="MesssageLabel" />
+        </Grid>
+        <Grid x:Name="GridBoard" Height="400" Width="400"  Background="Green" MouseDown="Grid_MouseDown" >
+        <Grid.ColumnDefinitions>
+            <!-- * ：「全体幅」から「幅指定列が確保した幅の合計」を引いた
+                      残りの幅を、"*" 指定がある列で 均等割りにします。-->
+<!--第1列--><ColumnDefinition Width="*"/>
+<!--第2列--><ColumnDefinition Width="*"/>
+<!--第3列--><ColumnDefinition Width="*"/>
+<!--第4列--><ColumnDefinition Width="*"/>
+<!--第5列--><ColumnDefinition Width="*"/>
+<!--第6列--><ColumnDefinition Width="*"/>
+<!--第7列--><ColumnDefinition Width="*"/>
+<!--第8列--><ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+<!--第1行--><RowDefinition Height="*"/>
+<!--第2行--><RowDefinition Height="*"/>
+<!--第3行--><RowDefinition Height="*"/>
+<!--第4行--><RowDefinition Height="*"/>
+<!--第5行--><RowDefinition Height="*"/>
+<!--第6行--><RowDefinition Height="*"/>
+<!--第7行--><RowDefinition Height="*"/>
+<!--第8行--><RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="0"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="1"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="2"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="3"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="4"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="5"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="6"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="7"/>
+        <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="8"/> -->
+        </Grid>
+
+</StackPanel>    
+</Window>
