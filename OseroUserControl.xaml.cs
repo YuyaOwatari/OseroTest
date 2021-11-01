@@ -24,18 +24,18 @@ namespace OseroTest
         {
             InitializeComponent();
 
-            String imgFileName = "";
-            imgFileName = "osero-illust1.png";
+            // String imgFileName = "";
+            // imgFileName = "osero-illust1.png";
 
-            Image img = new Image();
-            BitmapImage imgSrc = new BitmapImage();
-            imgSrc.BeginInit();
-            imgSrc.UriSource = new Uri(imgFileName,UriKind.Relative);
-            imgSrc.CacheOption = BitmapCacheOption.OnLoad;
-            imgSrc.EndInit();
+            // Image img = new Image();
+            // BitmapImage imgSrc = new BitmapImage();
+            // imgSrc.BeginInit();
+            // imgSrc.UriSource = new Uri(imgFileName,UriKind.Relative);
+            // imgSrc.CacheOption = BitmapCacheOption.OnLoad;
+            // imgSrc.EndInit();
 
-            img.Source = imgSrc;
-            GridRoot.Children.Add(img);
+            // img.Source = imgSrc;
+            // GridRoot.Children.Add(img);
 
         }
     }

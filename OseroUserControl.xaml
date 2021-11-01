@@ -11,5 +11,7 @@
 		<local:OseroUserControlViewModel x:Key="OseroViewModelDataSource" />
 	</UserControl.Resources>
 
-	<Grid x:Name="GridRoot" DataContext="{Binding Source={StaticResource OseroViewModelDataSource}}"/>
+	<Grid>
+		<Image Source="/osero-illust2.png"/>	
+	</Grid>
 </UserControl>

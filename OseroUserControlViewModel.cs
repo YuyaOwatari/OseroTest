@@ -8,6 +8,7 @@ namespace OseroTest
     public class OseroUserControlViewModel : INotifyPropertyChanged
     {
         private string message;
+        private int oseroStatus;
 
         public OseroUserControlViewModel()
         {
@@ -27,6 +28,21 @@ namespace OseroTest
                 this.NotifyPropertyChanged("Message");
             }
         }
+        public int OseroStatus
+        {
+            get
+            {
+                return this.oseroStatus;
+            }
+
+            set
+            {
+                this.oseroStatus = value;
+                
+                this.NotifyPropertyChanged("Message");
+            }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

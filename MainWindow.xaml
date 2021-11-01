@@ -6,20 +6,9 @@
         xmlns:local="clr-namespace:OseroTest"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="600">
- <Window.Resources>
-        <Storyboard x:Key="rotateAnimation" FillBehavior="HoldEnd" >
-            <!-- <DoubleAnimation
-                Storyboard.TargetName="rotate"
-                Storyboard.TargetProperty="Angle"
-                From="0" To="360" Duration="0:0:02" /> -->
-            <DoubleAnimation
-                Storyboard.TargetProperty="Width"
-                From="0" To="140" Duration="0:0:02" />
-        </Storyboard>
-</Window.Resources>
 <StackPanel  x:Name="StackOut" Height="600" Width="600" HorizontalAlignment="Center">
         <Grid x:Name="GridMessage" Height="50" Width="500" >
-                <Label x:Name="MesssageLabel" />
+                <Label x:Name="MessageLabel" HorizontalAlignment="center" FontSize="36"/>
         </Grid>
         <Grid x:Name="GridBoard" Height="400" Width="400"  Background="Green" MouseDown="Grid_MouseDown" >
         <Grid.ColumnDefinitions>
@@ -53,6 +42,9 @@
         <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="6"/>
         <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="7"/>
         <Border BorderBrush="Black" BorderThickness="1,1,1,1" Grid.Row="0" Grid.Column="8"/> -->
+        </Grid>
+        <Grid x:Name="GridMessage2" Height="50" Width="500" >
+                <Label x:Name="MessageLabel2" />
         </Grid>
 
 </StackPanel>    
